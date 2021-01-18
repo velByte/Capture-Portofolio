@@ -1,9 +1,6 @@
 import React from "react"; 
 import home1 from "../img/home1.png";
-//Импортираме компонента, преди това трябва да бъде инсталлиреан с npm 
-// npm install styled-conponents
-//Styled
-import styled from "styled-components";
+import {About, Description, Hide, Image} from "../styles.js";
 
 const AboutSection = () => {
     return(
@@ -31,41 +28,4 @@ const AboutSection = () => {
         </About>
     ); 
 }
-
-
-//Styled Component
-//Създаваме константа, която ще бъде използвана като заместител на HTML тага. 
-//Константата трябва да бъде равна на styled точка следвана от името на HTML тага
-//който трябва да замести, в този случай това е DIV таг. 
-//След това следва `и после съвсем нормален CSS. 
-//Добре е да се инсталира styled-componend разширение за VS Code. 
-const About = styled.div`
-    min-height: 90vh;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 10rem;
-    color: white;
-`;
-const Description = styled.div`
-    flex: 1; 
-    padding-right: 5rem; 
-    h2{
-        font-weight: lighter;
-    }
-`;
-const Image = styled.div`
-    flex:1;  
-    overflow: hidden;
-    img{
-        width: 100%;
-        height: 80vh;
-        object-fit: cover;
-    }  
-`;
-
-const Hide = styled.div`
-    overflow: hidden;
-`;
-
 export default AboutSection;
