@@ -20,7 +20,7 @@ function App() {
      {/* //Rout има няколко параметара. 
      //path параметара казва кога искаме да рендваме
      //компонента който е обграден от Route. Свързано е с URLа  */}
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter> //Неоходимо за анимациите
         <Switch location={location} key={location.pathname}> //Тези параметри са необходими за анимирането на страницата
           <Route path="/" exact>
             <AboutUs/>
