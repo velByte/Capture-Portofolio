@@ -1,24 +1,26 @@
 import React from "react"; 
 import home1 from "../img/home1.png";
-import {About, Description, Hide, Image} from "../styles.js";
+import { About, Description, Hide, Image } from "../styles.js";
+//Framer Motion
+import { motion } from "framer-motion";
+
 
 const AboutSection = () => {
-    return(
-				//След като сме оформили желаните css параметри, заместваме div компонента
-				//с името на константата. Константата се създава по-долу
+
+    return(		
         <About>
             <Description>
-                <div className="title">
+                <motion.div>
                     <Hide>
-                        <h2>We work to make</h2>
+                        <motion.h2>We work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>your <span>dreams</span> come</h2>
+                        <motion.h2>your <span>dreams</span> come</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>true.</h2>
+                        <motion.h2>true.</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact us for any photography or videography ideas that you have. We have professionals with amaizing skills </p>
                 <button>Contact Us</button>
             </Description>
