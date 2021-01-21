@@ -3,11 +3,12 @@ import React from "react";
 import {motion} from "framer-motion";
 import {pageAnimation, titleAnim} from "../animation";
 import styled from "styled-components";
-
+import ScrollTop from "../components/ScrollTop.js";
 
 
 const ContactUs = () => {
     return(
+        
         <ContactStyle
             variants={pageAnimation}
             initial="hidden"
@@ -45,6 +46,7 @@ const ContactUs = () => {
                 </Hide>
             </div>
         </ContactStyle>
+        
     ); 
 };
 

@@ -4,6 +4,7 @@ import {useHistory} from "react-router-dom";
 import {MovieState} from "../movieState";
 import {motion} from "framer-motion";
 import {pageAnimation} from "../animation";
+import ScrollTop from "../components/ScrollTop.js";
  
 
 const MovieDetail = () => {
@@ -47,6 +48,7 @@ const MovieDetail = () => {
 
     return(
         <>
+        <ScrollTop/>
         {/* Проверява дали movie е зареден първо, преди да рендне страницата.
             Това е необходимо защото в противен случай, React ще се опита да рендне страницата
             още преди да има информацията в movie. Виж линия 28, там зареждаме movie с null */}
