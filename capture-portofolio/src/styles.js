@@ -3,6 +3,7 @@
 // npm install styled-conponents
 //Styled
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 
 //Styled Component
@@ -11,7 +12,7 @@ import styled from "styled-components";
 //който трябва да замести, в този случай това е DIV таг. 
 //След това следва `и после съвсем нормален CSS. 
 //Добре е да се инсталира styled-componend разширение за VS Code. 
-export const About = styled.div`
+export const About = styled(motion.div)`
 min-height: 90vh;
 display:flex;
 align-items: center;

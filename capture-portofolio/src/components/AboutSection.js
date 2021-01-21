@@ -5,6 +5,7 @@ import { About, Description, Hide, Image } from "../styles.js";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
 import Wave from "./Wave";
+import {useScroll} from "../components/useScroll.js";
 
 
 const AboutSection = () => {
