@@ -9,6 +9,12 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html{
+        @media (max-width: 1700px){
+            font-size: 75%;
+        }
+    }
+
     body{
         background: #1b1b1b;
         font-family: 'Inter', sans-serif;
@@ -27,6 +33,9 @@ const GlobalStyle = createGlobalStyle`
         &:hover{
             background-color: #23d997;
             color: white;
+        }
+        @media (max-width: 1300px){
+            margin: 2rem 0rem 5rem 0rem;
         }
     }
     h2{
